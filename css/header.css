@@ -1,0 +1,130 @@
+body.open-menu {
+    overflow: hidden;
+}
+.header__wrapper {
+    position: relative;
+    width: 100%;
+    background-color: var(--first-brand-color);
+}
+.header__top {
+    display: flex;
+    align-items: center;
+}
+.header {
+    padding: 1rem 0;
+}
+.header__top-box {
+    display: flex;
+    align-items: center;
+}
+.header .btn {
+    display: none;
+}
+.header__btn {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 999999999999;
+    margin-right: 2rem;
+}
+.header__btn span {
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: .1rem;
+    background-color: var(--third-brand-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+}
+.header__btn span::before, .header__btn span::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .1rem;
+    background-color: var(--third-brand-color);
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all 0.3s ease-in-out;
+}
+.header__btn span::before {
+    top: -.7rem;
+}
+.header__btn span::after {
+    bottom: -.7rem;
+}
+.header__btn.active {
+    background-color: transparent;
+}
+.header__btn.active span {
+    background-color: transparent;
+}
+.header__btn.active span::before {
+    transform: rotate(45deg);
+    left: 0;
+    top: 0;
+}
+.header__btn.active span::after {
+    transform: rotate(-45deg);
+    left: 0;
+    top: 0;
+}
+
+.cart__span {
+    font-family: var(--title-font);
+    display: block;
+    margin-left: 1rem;
+}
+
+.nav__link {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-bg-color);
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999999;
+    transition: all 0.3s ease-in-out;
+    padding: 12rem 5rem 2rem;
+    overflow: scroll;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.nav.open-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
+.header__logo {
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 999999999;
+}
+.nav__list {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+.nav__item:not(:last-child) {
+    margin-bottom: 3rem;  
+}
+
+@media screen and (min-width: 1440px) {
+    .header .btn {
+        display: block;
+        margin: 0;
+    }
+    .header__top {
+        justify-content: space-between;
+    }
+}

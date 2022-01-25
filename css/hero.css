@@ -1,0 +1,39 @@
+.hero__wrapper {
+  background-color: var(--first-brand-color);
+}
+.hero {
+    padding: 25rem 0 10rem;
+    text-align: center;
+    position: relative;
+}
+.hero .text-block {
+  margin-bottom: 5rem;
+}
+.hero .title {
+  color: var(--third-brand-color);
+}
+.hero svg {
+  width: 100%;
+  max-width: 50rem;
+  max-height: 50rem;
+  display: block;
+  margin: 0 auto;
+  fill: var(--third-brand-color);
+}
+.svg-box {
+  position: relative;
+}
+.cart__span {
+  position: absolute;
+  display: block;
+  font-family: var(--main-title-font);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15rem;
+  color: var(--third-brand-color);
+}
+
+@media screen and (min-width: 1440px) {
+ 
+}
