@@ -1,6 +1,12 @@
 .footer__wrapper {
   background-color: var(--third-brand-color);
 }
+.footer__icon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
 .footer {
   position: relative;
   padding: 3rem 0 2rem;
