@@ -23,16 +23,7 @@
 .svg-box {
   position: relative;
 }
-.cart__span {
-  position: absolute;
-  display: block;
-  font-family: var(--main-title-font);
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 15rem;
-  color: var(--third-brand-color);
-}
+
 
 @media screen and (min-width: 1440px) {
  

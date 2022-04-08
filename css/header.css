@@ -72,11 +72,15 @@ body.open-menu {
     left: 0;
     top: 0;
 }
-
+.header .btn {
+    padding: 1rem;
+}
 .cart__span {
     font-family: var(--title-font);
     display: block;
     margin-left: 1rem;
+    color: var(--main-text-color);
+    font-size: 3rem;
 }
 
 .nav__link {
@@ -121,7 +125,8 @@ body.open-menu {
 
 @media screen and (min-width: 1440px) {
     .header .btn {
-        display: block;
+        display: flex;
+        align-items: center;
         margin: 0;
     }
     .header__top {

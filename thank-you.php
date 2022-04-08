@@ -28,7 +28,7 @@
               </button>
               <a href="./index.html" class="header__logo logo js_website-name"></a>
             </div>
-            <a href="./shop.html" class="btn">my cart</a>
+            <a href="./shop.html" class="btn">my cart <span class="cart__span js_cart__span"></span></a>
               
             
     
