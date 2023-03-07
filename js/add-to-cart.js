@@ -39,10 +39,7 @@ function addToCart(e) {
 
     getLocalStorageItem().forEach(product => {
        const productTotal = Number((product.quantity * product.price).toFixed(2));
-       console.log('total', total);
-       console.log('productTotal', productTotal);
        total = total + productTotal;
-       console.log('total 2', total);
        if (total > 500) {
         document.body.classList.add('error-active');
         window.addEventListener('keydown', (e) => {
@@ -55,16 +52,15 @@ function addToCart(e) {
        }
     })
 
-      // ADD TO LOCAL STORAGE
-      if (okay){
-        if(localStorage(productId) != false) {
-            if(cartSpan) {
-                cartSpan.textContent = Number(cartSpan.textContent) + 1;
-            }
+   // ADD TO LOCAL STORAGE
+   if (okay){
+    if(localStorage(productId) != false) {
+        if(cartSpan) {
+            cartSpan.textContent = Number(cartSpan.textContent) + 1;
         }
-        showSuccessMessage(successMessage, successMessageSpan, name);
     }
-    
+    showSuccessMessage(successMessage, successMessageSpan, name);
+}
 
 }
 
