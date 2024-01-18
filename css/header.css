@@ -18,7 +18,12 @@ body.open-menu {
     align-items: center;
 }
 .header .btn {
-    display: none;
+    margin-right: 0;
+    align-items: center;
+    display: flex;
+    font-size: 1.4rem;
+     color: var(--main-text-color);
+     padding: 1rem;
 }
 .header__btn {
     width: 5rem;
@@ -80,7 +85,7 @@ body.open-menu {
     display: block;
     margin-left: 1rem;
     color: var(--main-text-color);
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 .nav__link {
